@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D71943C1B86A4710041148C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D71943B1B86A4710041148C /* AppDelegate.swift */; };
+		2D71943F1B86A4710041148C /* CutyPaste.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D71943D1B86A4710041148C /* CutyPaste.xcdatamodeld */; };
+		2D7194411B86A4710041148C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7194401B86A4710041148C /* ViewController.swift */; };
+		2D7194441B86A4710041148C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7194421B86A4710041148C /* Main.storyboard */; };
+		2D7194461B86A4710041148C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7194451B86A4710041148C /* Images.xcassets */; };
+		2D7194491B86A4710041148C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7194471B86A4710041148C /* LaunchScreen.xib */; };
+		2D7194551B86A4720041148C /* CutyPasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7194541B86A4720041148C /* CutyPasteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D71944F1B86A4720041148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D71942E1B86A4710041148C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D7194351B86A4710041148C;
+			remoteInfo = CutyPaste;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D7194361B86A4710041148C /* CutyPaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutyPaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D71943A1B86A4710041148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D71943B1B86A4710041148C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D71943E1B86A4710041148C /* CutyPaste.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CutyPaste.xcdatamodel; sourceTree = "<group>"; };
+		2D7194401B86A4710041148C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D7194431B86A4710041148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D7194451B86A4710041148C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D7194481B86A4710041148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2D71944E1B86A4720041148C /* CutyPasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CutyPasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7194531B86A4720041148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7194541B86A4720041148C /* CutyPasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutyPasteTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D7194331B86A4710041148C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D71944B1B86A4720041148C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D71942D1B86A4710041148C = {
+			isa = PBXGroup;
+			children = (
+				2D7194381B86A4710041148C /* CutyPaste */,
+				2D7194511B86A4720041148C /* CutyPasteTests */,
+				2D7194371B86A4710041148C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D7194371B86A4710041148C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D7194361B86A4710041148C /* CutyPaste.app */,
+				2D71944E1B86A4720041148C /* CutyPasteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D7194381B86A4710041148C /* CutyPaste */ = {
+			isa = PBXGroup;
+			children = (
+				2D71943B1B86A4710041148C /* AppDelegate.swift */,
+				2D7194401B86A4710041148C /* ViewController.swift */,
+				2D7194421B86A4710041148C /* Main.storyboard */,
+				2D7194451B86A4710041148C /* Images.xcassets */,
+				2D7194471B86A4710041148C /* LaunchScreen.xib */,
+				2D71943D1B86A4710041148C /* CutyPaste.xcdatamodeld */,
+				2D7194391B86A4710041148C /* Supporting Files */,
+			);
+			path = CutyPaste;
+			sourceTree = "<group>";
+		};
+		2D7194391B86A4710041148C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D71943A1B86A4710041148C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D7194511B86A4720041148C /* CutyPasteTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D7194541B86A4720041148C /* CutyPasteTests.swift */,
+				2D7194521B86A4720041148C /* Supporting Files */,
+			);
+			path = CutyPasteTests;
+			sourceTree = "<group>";
+		};
+		2D7194521B86A4720041148C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D7194531B86A4720041148C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D7194351B86A4710041148C /* CutyPaste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D7194581B86A4720041148C /* Build configuration list for PBXNativeTarget "CutyPaste" */;
+			buildPhases = (
+				2D7194321B86A4710041148C /* Sources */,
+				2D7194331B86A4710041148C /* Frameworks */,
+				2D7194341B86A4710041148C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CutyPaste;
+			productName = CutyPaste;
+			productReference = 2D7194361B86A4710041148C /* CutyPaste.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D71944D1B86A4720041148C /* CutyPasteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D71945B1B86A4720041148C /* Build configuration list for PBXNativeTarget "CutyPasteTests" */;
+			buildPhases = (
+				2D71944A1B86A4720041148C /* Sources */,
+				2D71944B1B86A4720041148C /* Frameworks */,
+				2D71944C1B86A4720041148C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D7194501B86A4720041148C /* PBXTargetDependency */,
+			);
+			name = CutyPasteTests;
+			productName = CutyPasteTests;
+			productReference = 2D71944E1B86A4720041148C /* CutyPasteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D71942E1B86A4710041148C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Catalina Balmaceda";
+				TargetAttributes = {
+					2D7194351B86A4710041148C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2D71944D1B86A4720041148C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2D7194351B86A4710041148C;
+					};
+				};
+			};
+			buildConfigurationList = 2D7194311B86A4710041148C /* Build configuration list for PBXProject "CutyPaste" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D71942D1B86A4710041148C;
+			productRefGroup = 2D7194371B86A4710041148C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D7194351B86A4710041148C /* CutyPaste */,
+				2D71944D1B86A4720041148C /* CutyPasteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D7194341B86A4710041148C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7194441B86A4710041148C /* Main.storyboard in Resources */,
+				2D7194491B86A4710041148C /* LaunchScreen.xib in Resources */,
+				2D7194461B86A4710041148C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D71944C1B86A4720041148C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D7194321B86A4710041148C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7194411B86A4710041148C /* ViewController.swift in Sources */,
+				2D71943F1B86A4710041148C /* CutyPaste.xcdatamodeld in Sources */,
+				2D71943C1B86A4710041148C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D71944A1B86A4720041148C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7194551B86A4720041148C /* CutyPasteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D7194501B86A4720041148C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D7194351B86A4710041148C /* CutyPaste */;
+			targetProxy = 2D71944F1B86A4720041148C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D7194421B86A4710041148C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7194431B86A4710041148C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D7194471B86A4710041148C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7194481B86A4710041148C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D7194561B86A4720041148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D7194571B86A4720041148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D7194591B86A4720041148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CutyPaste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D71945A1B86A4720041148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CutyPaste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D71945C1B86A4720041148C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CutyPasteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CutyPaste.app/CutyPaste";
+			};
+			name = Debug;
+		};
+		2D71945D1B86A4720041148C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CutyPasteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CutyPaste.app/CutyPaste";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D7194311B86A4710041148C /* Build configuration list for PBXProject "CutyPaste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7194561B86A4720041148C /* Debug */,
+				2D7194571B86A4720041148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D7194581B86A4720041148C /* Build configuration list for PBXNativeTarget "CutyPaste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7194591B86A4720041148C /* Debug */,
+				2D71945A1B86A4720041148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D71945B1B86A4720041148C /* Build configuration list for PBXNativeTarget "CutyPasteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D71945C1B86A4720041148C /* Debug */,
+				2D71945D1B86A4720041148C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D71943D1B86A4710041148C /* CutyPaste.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D71943E1B86A4710041148C /* CutyPaste.xcdatamodel */,
+			);
+			currentVersion = 2D71943E1B86A4710041148C /* CutyPaste.xcdatamodel */;
+			path = CutyPaste.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D71942E1B86A4710041148C /* Project object */;
+}
