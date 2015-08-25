@@ -142,10 +142,19 @@ class MenuCollectionViewController: UICollectionViewController {
         // Print Article Title/Date in the Cell
         if (self.postsController.listaPosts.count>0)
         {
+            
+            //Prints the post title in the preview view.
             cell.MenuTitle.text = self.postsController.listaPosts[indexPath.row].title
             
+            //Prints the author name in the preview view.
+            cell.MenuBy.text =  self.postsController.listaPosts[indexPath.row].author.firstName + " " + self.postsController.listaPosts[indexPath.row].author.lastName
+            
             //Do the difference in hours instead of the actual date of contribution
-            cell.MenuDate.text = self.postsController.listaPosts[indexPath.row].date        }
+            cell.MenuDate.text = self.postsController.listaPosts[indexPath.row].date
+            
+            
+            
+        }
         else
         {
             cell.MenuTitle.text = "Loading..."

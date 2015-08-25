@@ -2,7 +2,7 @@
 //  Author.swift
 //  CutyPaste
 //
-//  Created by Benjamin Dalgalarrando on 8/25/15.
+//  Created by Catalina Balmaceda on 21-08-15.
 //  Copyright (c) 2015 Catalina Balmaceda. All rights reserved.
 //
 
@@ -11,25 +11,25 @@ import Foundation
 import SwiftyJSON
 
 class Author {
-//    let id: String
+//   let id: String
 //    let slug:String
 //    let name: String
-//    let firstName: String
-//    let lastName: String
+    let firstName: String
+    let lastName: String
 //    let nickname: String
 //    let url: String
 //    let description: String
     
-    init(data: JSON) {
+    init(infoauthor: JSON) {
         //println("\n\n\(data)")
-//        self.id = data["author":{"id"}].stringValue
-//        self.slug = data["slug"].stringValue
-//        self.name = data["name"].stringValue
-//        self.firstName = data["first_name"].stringValue
-//        self.lastName = data["last_name"].stringValue
-//        self.nickname = data["nickname"].stringValue
-//        self.url = data["url"].stringValue
-//        self.description = data["description"].stringValue
+//        self.id = infoauthor["id"].stringValue
+//        self.slug = infoauthor["slug"].stringValue
+//        self.name = infoauthor["name"].stringValue
+        self.firstName = infoauthor["first_name"].stringValue
+        self.lastName = infoauthor["last_name"].stringValue
+//        self.nickname = infoauthor["nickname"].stringValue
+//        self.url = infoauthor["url"].stringValue
+//        self.description = infoauthor["description"].stringValue
         
     }
   
