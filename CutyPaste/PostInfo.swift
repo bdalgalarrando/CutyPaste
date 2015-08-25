@@ -15,13 +15,15 @@ class PostInfo {
     let date: String
     let content: String
     let slug: String
+ //   let author: Author
     
     init(data: JSON) {
-        //println("\n\n\(data)")
+        
         self.url = data["url"].stringValue
         self.title = data["title"].stringValue
         self.slug = data["slug"].stringValue
         self.date = data["date"].stringValue
         self.content = data["content"].stringValue
+//        self.author = Author(data)
     }
 }

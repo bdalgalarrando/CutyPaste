@@ -52,7 +52,10 @@ class MenuCollectionViewController: UICollectionViewController {
                 let data = JSON(json!)
                 let infoPostsJson = data["posts"] as JSON
                 self.postsController.addPosts(infoPostsJson)
-                
+//                
+//                let infoPostsJson = data["posts"] as JSON
+//                self.postsController.addPosts(infoPostsJson)
+//                
                 // Metodo verifica que haya informacion en el thread
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -113,25 +116,42 @@ class MenuCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 5
+        
+        if (self.postsController.listaPosts.count>0)
+        {
+            return self.postsController.listaPosts.count
+        }
+        else
+        {
+            return 1
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! MenuCollectionViewCell
     
-        // Configure the cell
+        // Print Article Title/Date in the Cell
         if (self.postsController.listaPosts.count>0)
         {
             cell.MenuTitle.text = self.postsController.listaPosts[indexPath.row].title
-        }
+            
+            //Do the difference in hours instead of the actual date of contribution
+            cell.MenuDate.text = self.postsController.listaPosts[indexPath.row].date        }
         else
         {
             cell.MenuTitle.text = "Loading..."
         }
         
-//      cell.MenuTitle.text = "hola"
-//       var caca = self.postsController.listaPosts.count
-//        println(caca)
+
         
         return cell
     }
