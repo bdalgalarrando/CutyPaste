@@ -113,7 +113,7 @@ class MenuCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 3
+        return 5
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -122,7 +122,7 @@ class MenuCollectionViewController: UICollectionViewController {
         // Configure the cell
         if (self.postsController.listaPosts.count>0)
         {
-            cell.MenuTitle.text = self.postsController.listaPosts[0].title
+            cell.MenuTitle.text = self.postsController.listaPosts[indexPath.row].title
         }
         else
         {
