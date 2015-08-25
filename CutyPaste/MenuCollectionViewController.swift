@@ -10,68 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class PostInfo {
-    let url: String
-    let title:String
-    let date: String
-    let content: String
-    let slug: String
-    
-    init(data: JSON) {
-        //println("\n\n\(data)")
-        self.url = data["url"].stringValue
-        self.title = data["title"].stringValue
-        self.slug = data["slug"].stringValue
-        self.date = data["date"].stringValue
-        self.content = data["content"].stringValue
-    }
-}
 
-class PostInfoController{
-    var listaPosts: [PostInfo] = []
-    
-    func addPosts(info: JSON){
-        for (index: String, subJson: JSON) in info {
-            let post = PostInfo(data: subJson)
-            listaPosts.append(post)
-        }
-    }
-}
-
-class Category {
-    let id: String
-    let slug:String
-    let title: String
-    let description: String
-    let parent: String
-    let post_count: String
-    init(data: JSON) {
-        self.id = data[0]["id"].stringValue
-        self.slug = data[0]["slug"].stringValue
-        self.title = data[0]["title"].stringValue
-        self.description = data[0]["description"].stringValue
-        self.parent = data[0]["parent"].stringValue
-        self.post_count = data[0]["post_count"].stringValue
-    }
-}
-
-//class Category {
-//    let vitrina: String
-//    let belleza:String
-//    let moda: String
-//    let estiloDeVida: String
-//    let tendencia: String
-//    let noticias: String
-//    
-//    init(data: JSON) {
-//        self.vitrina = data[0]["vitrina"].stringValue
-//        self.belleza = data[0]["belleza"].stringValue
-//        self.moda = data[0]["moda"].stringValue
-//        self.estiloDeVida = data[0]["estilo de vida"].stringValue
-//        self.tendencia = data[0]["tendencia"].stringValue
-//        self.noticias = data[0]["noticias"].stringValue
-//    }
-//}
 
 let reuseIdentifier = "MainImage"
 
@@ -83,9 +22,11 @@ class MenuCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         self.setItemsPerRowInLayout(1)
+
         
-//        postController = read() as! PostInfoController
+        //**** Llama a la funcion que lee los posts y los agrega a la postsController
         read()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -101,7 +42,7 @@ class MenuCollectionViewController: UICollectionViewController {
     
     
     func read() {
-//    func read() -> PostInfoController {
+
         
         Alamofire.request(.GET,"http://www.cutypaste.com/api/get_posts")
             .validate()
@@ -112,13 +53,12 @@ class MenuCollectionViewController: UICollectionViewController {
                 let infoPostsJson = data["posts"] as JSON
                 self.postsController.addPosts(infoPostsJson)
                 
-//                return self.postsController
-                
-                
+                // Metodo verifica que haya informacion en el thread
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     println(self.postsController.listaPosts.count)
                     println(self.postsController.listaPosts[1].title)
+                    self.collectionView?.reloadData()
                 })
                 
         }
@@ -180,10 +120,18 @@ class MenuCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! MenuCollectionViewCell
     
         // Configure the cell
+        if (self.postsController.listaPosts.count>0)
+        {
+            cell.MenuTitle.text = self.postsController.listaPosts[0].title
+        }
+        else
+        {
+            cell.MenuTitle.text = "Loading..."
+        }
         
-      cell.MenuTitle.text = "hola"
-       var caca = self.postsController.listaPosts.count
-        println(caca)
+//      cell.MenuTitle.text = "hola"
+//       var caca = self.postsController.listaPosts.count
+//        println(caca)
         
         return cell
     }
