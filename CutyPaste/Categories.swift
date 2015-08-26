@@ -23,7 +23,7 @@ class Categories {
         
         
         for (index: String, subJson: JSON) in info {
-            let categorypost = Category(categorydata:info["categories"] as JSON)
+            let categorypost = Category(categorydata:subJson as JSON)
             listaCategories.append(categorypost)
         }
 
