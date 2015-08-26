@@ -18,6 +18,7 @@
 		2D7194551B86A4720041148C /* CutyPasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7194541B86A4720041148C /* CutyPasteTests.swift */; };
 		2D74D8591B8D08DF00A65C55 /* SwipeBarObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74D8571B8D08DF00A65C55 /* SwipeBarObject.swift */; };
 		2D74D85A1B8D08DF00A65C55 /* SwipeMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74D8581B8D08DF00A65C55 /* SwipeMenuTableViewController.swift */; };
+		2DCBA53B1B8E4BE00055035D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCBA53A1B8E4BE00055035D /* Categories.swift */; };
 		B524C7591B8BD1A300415AE8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524C7581B8BD1A300415AE8 /* Category.swift */; };
 		B524C75B1B8C301500415AE8 /* PostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524C75A1B8C301500415AE8 /* PostInfo.swift */; };
 		B524C75D1B8C30AB00415AE8 /* PostInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524C75C1B8C30AB00415AE8 /* PostInfoController.swift */; };
@@ -51,6 +52,7 @@
 		2D7194541B86A4720041148C /* CutyPasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutyPasteTests.swift; sourceTree = "<group>"; };
 		2D74D8571B8D08DF00A65C55 /* SwipeBarObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeBarObject.swift; sourceTree = "<group>"; };
 		2D74D8581B8D08DF00A65C55 /* SwipeMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeMenuTableViewController.swift; sourceTree = "<group>"; };
+		2DCBA53A1B8E4BE00055035D /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		5948C087EB15115A9FCB060A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5ABEFFA8C945EA0CF28492B8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8871A3474F01DE7C44234720 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				B524C75C1B8C30AB00415AE8 /* PostInfoController.swift */,
 				B524C75A1B8C301500415AE8 /* PostInfo.swift */,
 				B59AE2A81B8C54520026A695 /* Author.swift */,
+				2DCBA53A1B8E4BE00055035D /* Categories.swift */,
 				B524C7581B8BD1A300415AE8 /* Category.swift */,
 				2D7194451B86A4710041148C /* Images.xcassets */,
 				2D434FC41B87C1B7006BD49F /* MenuCollectionViewCell.swift */,
@@ -321,6 +324,7 @@
 				B59AE2A91B8C54520026A695 /* Author.swift in Sources */,
 				2D71943F1B86A4710041148C /* CutyPaste.xcdatamodeld in Sources */,
 				2D71943C1B86A4710041148C /* AppDelegate.swift in Sources */,
+				2DCBA53B1B8E4BE00055035D /* Categories.swift in Sources */,
 				2D434FC31B87C022006BD49F /* MenuCollectionViewController.swift in Sources */,
 				2D74D8591B8D08DF00A65C55 /* SwipeBarObject.swift in Sources */,
 				2D434FC61B87C1B7006BD49F /* MenuCollectionViewCell.swift in Sources */,
