@@ -2,7 +2,7 @@
 //  PostInfoController.swift
 //  CutyPaste
 //
-//  Created by Benjamin Dalgalarrando on 8/24/15.
+//  Created by Catalina Balmaceda on 21-08-15.
 //  Copyright (c) 2015 Catalina Balmaceda. All rights reserved.
 //
 

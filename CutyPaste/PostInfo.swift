@@ -16,6 +16,7 @@ class PostInfo {
     let content: String
     let slug: String
     let author: Author
+    let categories: Categories
     
     init(data: JSON) {
         
@@ -25,5 +26,6 @@ class PostInfo {
         self.date = data["date"].stringValue
         self.content = data["content"].stringValue
         self.author = Author(infoauthor:data["author"] as JSON)
+        self.categories = Categories(info:data["categories"][] as JSON) // enviar data de un arreglo en vez de un diccionario
     }
 }

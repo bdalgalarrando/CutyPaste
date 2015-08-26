@@ -21,6 +21,7 @@
 		B524C75B1B8C301500415AE8 /* PostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524C75A1B8C301500415AE8 /* PostInfo.swift */; };
 		B524C75D1B8C30AB00415AE8 /* PostInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524C75C1B8C30AB00415AE8 /* PostInfoController.swift */; };
 		B59AE2A91B8C54520026A695 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AE2A81B8C54520026A695 /* Author.swift */; };
+		B5E2BBD01B8D33BB00BE51C6 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2BBCF1B8D33BB00BE51C6 /* Categories.swift */; };
 		D2A723B04C785FE40960A4BC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8871A3474F01DE7C44234720 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		B524C75A1B8C301500415AE8 /* PostInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostInfo.swift; sourceTree = "<group>"; };
 		B524C75C1B8C30AB00415AE8 /* PostInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostInfoController.swift; sourceTree = "<group>"; };
 		B59AE2A81B8C54520026A695 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		B5E2BBCF1B8D33BB00BE51C6 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				B59AE2A81B8C54520026A695 /* Author.swift */,
 				B524C75C1B8C30AB00415AE8 /* PostInfoController.swift */,
 				B524C7581B8BD1A300415AE8 /* Category.swift */,
+				B5E2BBCF1B8D33BB00BE51C6 /* Categories.swift */,
 				2D7194451B86A4710041148C /* Images.xcassets */,
 				2D434FC41B87C1B7006BD49F /* MenuCollectionViewCell.swift */,
 				2D434FC51B87C1B7006BD49F /* MenuCollectionViewCell.xib */,
@@ -319,6 +322,7 @@
 				2D71943F1B86A4710041148C /* CutyPaste.xcdatamodeld in Sources */,
 				2D71943C1B86A4710041148C /* AppDelegate.swift in Sources */,
 				2D434FC31B87C022006BD49F /* MenuCollectionViewController.swift in Sources */,
+				B5E2BBD01B8D33BB00BE51C6 /* Categories.swift in Sources */,
 				2D434FC61B87C1B7006BD49F /* MenuCollectionViewCell.swift in Sources */,
 				B524C7591B8BD1A300415AE8 /* Category.swift in Sources */,
 			);

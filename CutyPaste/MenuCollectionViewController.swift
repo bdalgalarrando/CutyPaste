@@ -61,6 +61,7 @@ class MenuCollectionViewController: UICollectionViewController {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     println(self.postsController.listaPosts.count)
                     println(self.postsController.listaPosts[1].title)
+//                    println(self.postsController.listaPosts[0].categories[0].title)
                     self.collectionView?.reloadData()
                 })
                 
