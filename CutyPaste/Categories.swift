@@ -16,18 +16,34 @@ class Categories {
     
     
     
-    init() {
-
-    }
-    init(info: JSON) {
+//    init() {
+//
+//    }
+//    init(info: JSON) {
+//        
+//        
+//        for (index: String, subJson: JSON) in info {
+//            let categorypost = Category(categorydata:subJson as JSON)
+//            listaCategories.append(categorypost)
+//            
+//            
+//            
+//        }
+    
         
-        
-        for (index: String, subJson: JSON) in info {
-            let categorypost = Category(categorydata:subJson as JSON)
-            listaCategories.append(categorypost)
+        init(info: JSON) {
+            
+            for (index: String, subJson: JSON) in info {
+                let categorypost = Category(categorydata:subJson as JSON)
+                listaCategories.append(categorypost)
+                println(categorypost.title)
+            }
+            println("\n")
+            
         }
+        
 
-    }
+    
 
     
 }

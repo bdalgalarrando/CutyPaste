@@ -10,7 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-
+    extension String {
+    var html2String:String {
+        return NSAttributedString(data: dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute:NSUTF8StringEncoding], documentAttributes: nil, error: nil)!.string
+    }
+}
 
 let reuseIdentifier = "MainImage"
 
@@ -60,7 +64,12 @@ class MenuCollectionViewController: UICollectionViewController {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     println(self.postsController.listaPosts.count)
                     println(self.postsController.listaPosts[1].title)
-//                    println(self.postsController.listaPosts[0].categories.listaCategories[0].title)
+//                  println(self.postsController.listaPosts[0].categories.listaCategories[0].title)
+                    println(self.postsController.listaPosts[0].categories.listaCategories[0].title)
+                    println("Post Title: \(self.postsController.listaPosts[0].title)")
+                    for cat in self.postsController.listaPosts[0].categories.listaCategories{
+                        println("Category Title \(cat.title)")
+                    }
                        
                     self.collectionView?.reloadData()
                 })
