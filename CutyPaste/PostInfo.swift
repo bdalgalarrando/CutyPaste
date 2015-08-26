@@ -2,7 +2,7 @@
 //  PostInfo.swift
 //  CutyPaste
 //
-//  Created by Benjamin Dalgalarrando on 8/24/15.
+//  Created by Catalina Balmaceda on 21-08-15.
 //  Copyright (c) 2015 Catalina Balmaceda. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ class PostInfo {
     let date: String
     let content: String
     let slug: String
- //   let author: Author
+    let author: Author
     
     init(data: JSON) {
         
@@ -24,6 +24,6 @@ class PostInfo {
         self.slug = data["slug"].stringValue
         self.date = data["date"].stringValue
         self.content = data["content"].stringValue
-//        self.author = Author(data)
+        self.author = Author(infoauthor:data["author"] as JSON)
     }
 }
